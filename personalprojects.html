@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <meta charset = "utf-8">
+    <title>Berk Tanyeri</title>
+    <link rel="icon" href="images/name-logo.png"/>
+    <link href = "styles/site.css" type = "text/css" rel = "stylesheet">
+    <!-- Source: (original logo) Berk Tanyeri, via Photoshop -->
+  </head>
+
+  <body>
+
+    <header>
+      <div class = "navi">
+        <!-- Source: (original logo) Berk Tanyeri, via Photoshop -->
+        <img class = "logo" src="images/name-logo.png" alt = "logo">
+        <!-- Source: (original logo) Berk Tanyeri, via Photoshop -->
+        <button id="menubutton"><img class ="logo clickable" src="images/menu.png" alt = "hamburger menu"></button>
+        <div id="dropper" class = "dropdown hidden"> <!-- hidden menu for hamburger -->
+          <nav>
+            <ul class = "navi">
+              <li class="navi"><a href="index.html">Home</a></li>
+              <li class="navi"><a href="education.html">Education</a></li>
+              <li class="navi"><a href="experience.html">Experience</a></li>
+              <li class="navi"><a href="personalprojects.html">Personal Projects</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h3><strong>FDNY Advisor</strong></h3>
+      <div class = "bulletandphoto">
+        <ul>
+          <li>Advisor program built for the FDNY (Fire Department of New York)</li>
+          <li>Advises the FDNY based on a received call and produces actions to take, units to send, and expected incident duration based on trained information</li>
+          <li>Built using Pandas and Scikit-Learn libraries with supervised and predictive learning on datasets from NYCOpenData</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>Multi-threaded Map Reduce Shuffle</strong></h3>
+      <div class = "bulletandphoto">
+        <ul>
+          <li>N-Gram - a sequence of exactly n words in some single sentence, and not spanning across punctuation characters</li>
+          <li>A multi threaded program that scans a folder of txt files and outputs the top 5 most frequently found N-Grams of each thread</li>
+          <li>Avoids threads having the same phrases in their outputs by using string hashing and mapping
+            <ul>
+              <li>Mapping step: Compute the n-grams for each of the files the particular thread is assigned to. The result of these steps will be that each thread has a collection of (key-value) objects where the key is a hashed integer identifying the n-gram, and the value is the associated frequency count of word sequences of size n that this thread computed.</li>
+              <li>Shuffling step: After each thread builds and counts its n-gram collection, each thread will send their n-grams to a bucket depending on the string hash value (# of buckets = # of threads). N-Gram shuffling implemented via locking mechanisms on each bucket to ensure no loss of data</li>
+              <li>Reduce step: Upon completion of sending hashed strings to their buckets, each thread will then reduce by summing the counts for each n-gram it recieved, combining frequencys for n-grams with the same hash key. Finally, The program will then output the top 5 frequency counts for each thread</li>
+            </ul></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>Financial Stock App</strong></h3>
+      <div class = "bulletandphoto">
+        <ul>
+          <li>Allow users to access real-time stock Information on any company</li>
+          <li>Buy/Sell recommendations, historical view of stock prices</li>
+          <li>Allow users to access top current headlines for any company to help aid them in financial decisions (public perception)</li>
+          <li>Built via functional Programming in OCaml and public API usage</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>More projects can be found on my GitHub, linked on the Home page!</strong></h3>
+    </section>
+
+    <br/>
+    <br/>
+    <hr />
+
+    <footer>
+        <br/>Website created by Berk Tanyeri
+    </footer>
+
+    <script src = "scripts/jquery-3.6.0.js"></script>
+    <script src = "scripts/myscripts.js"></script>
+
+  </body>
+
+</html>

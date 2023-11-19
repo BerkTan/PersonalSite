@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <meta charset = "utf-8">
+    <title>Berk Tanyeri</title>
+    <link rel="icon" href="images/name-logo.png"/>
+    <link href = "styles/site.css" type = "text/css" rel = "stylesheet">
+    <!-- Source: (original logo) Berk Tanyeri, via Photoshop -->
+  </head>
+
+  <body>
+
+    <header>
+      <div class = "navi">
+        <!-- Source: (original logo) Berk Tanyeri, via Photoshop -->
+        <img class = "logo" src="images/name-logo.png" alt = "logo">
+        <!-- Source: (original logo) Berk Tanyeri, via Photoshop -->
+        <button id="menubutton"><img class ="logo clickable" src="images/menu.png" alt = "hamburger menu"></button>
+        <div id="dropper" class = "dropdown hidden"> <!-- hidden menu for hamburger -->
+          <nav>
+            <ul class = "navi">
+              <li class="navi"><a href="index.html">Home</a></li>
+              <li class="navi"><a href="education.html">Education</a></li>
+              <li class="navi"><a href="experience.html">Experience</a></li>
+              <li class="navi"><a href="personalprojects.html">Personal Projects</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <aside>
+      <h1 class = "thehello">HELLO!</h1>
+      <p><strong>I'm Berk Tanyeri, a computer scientist and business graduate from Cornell University</strong></p>
+      <h1 class = "arrow"><a href="#AboutMe"><span class="down">▼</span></a></h1>
+    </aside>
+
+    <aside>
+      <h2 id = "AboutMe">About Me</h2>
+      <div class="carousel">
+        <!-- Source: Made using Microsoft Word shapes (a circle and arrow) and screenshotting -->
+        <button id="leftarrow"><img class = "arrows clickable" src="images/leftbutton.png" alt="left clicker"></button>
+
+        <!-- Source: self taken photo with camera timer  -->
+        <img id = "middle0" class = "personal" src="images/profile-pic.jpg" alt="profile pic">
+        <!-- Source: self taken photo with camera timer  -->
+        <img id = "middle1" class = "personal hidden" src="images/work-pic.jpg" alt="personal pic">
+        <!-- Source: self taken photo with camera timer  -->
+        <img id = "middle2" class = "personal hidden" src="images/personal-pic.jpg" alt="personal pic">
+
+        <!-- Source: Made using Microsoft Word shapes (a circle and arrow) and screenshotting -->
+        <button type="button" id="rightarrow"><img class = "arrows clickable" src="images/rightbutton.png" alt="right clicker"></button>
+      </div>
+      <div class="carouselb">
+        <!-- Source: Made using Microsoft Word shapes (a circle) and screenshotting -->
+        <button id="button0"><img class = "buttons clickable" src="images/button.png" alt="left"></button>
+        <!-- Source: Made using Microsoft Word shapes (a circle) and screenshotting -->
+        <button id="button1"><img class = "buttons clickable" src="images/button.png" alt="middle"></button>
+        <!-- Source: Made using Microsoft Word shapes (a circle) and screenshotting -->
+        <button id="button2"  class = "currentButton"><img class = "buttons clickable" src="images/button.png" alt="right"></button>
+      </div>
+      <p>I am a computer science major and business minor that graduated with Cornell University’s Class of 2022. My skills include object oriented 
+        programming in a variety of languages, functional programming, and digital business strategy and management. I aim to work with people 
+        from across many disciplines to apply critical thinking and problem solving skills while simultaneously receiving exposure to real world 
+        scenarios, new concepts, and experiences to enhance my knowledge.</p>
+    </aside>
+
+    <aside>
+      <h2>Contact Me</h2>
+      <p>Want to reach out and connect? You can find me on the following platforms!</p>
+      <div class="socialmedia">
+        <!-- <figure>
+          Source: https://vectorified.com/download-image#email-icon-white-transparent-3.png
+          <a href="mailto: NA">
+            <img class = "socialmedia clickable" src="images/email-logo.png" alt="mail icon"></a>
+            <figcaption>
+              Source: <cite><a href="https://vectorified.com/download-image#email-icon-white-transparent-3.png">Vectorified</a></cite>
+            </figcaption>
+        </figure> -->
+        <figure>
+          <!--Source: https://freebiesupply.com/logos/linkedin-icon-logo/    -->
+          <a href="https://www.linkedin.com/in/berktanyeri">
+           <img class = "socialmedia clickable" src="images/linkedin-logo.png" alt="linkedin icon">
+          </a>
+            <figcaption>
+              Source: <cite><a href="https://freebiesupply.com/logos/linkedin-icon-logo/">Freebiesupply</a></cite>
+            </figcaption>
+        </figure>
+        <figure>
+          <!--Source: https://www.iconsdb.com/white-icons/github-9-icon.html -->
+          <a href="https://www.github.com/berktan">
+            <img class = "socialmedia clickable" src="images/github-logo.png" alt="github icon">
+          </a>
+          <figcaption>
+            Source: <cite><a href="https://www.iconsdb.com/white-icons/github-9-icon.html ">Iconsdb</a></cite>
+          </figcaption>
+        </figure>
+      </div>
+    </aside>
+
+    <hr />
+
+    <footer>
+        <br/>Website created by Berk Tanyeri
+    </footer>
+
+    <script src = "scripts/jquery-3.6.0.js"></script>
+    <script src = "scripts/myscripts.js"></script>
+
+  </body>
+
+</html>
